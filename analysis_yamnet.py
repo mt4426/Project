@@ -106,8 +106,8 @@ def load_spl_data(spl_hdf5_path, do_limit_to_covid_dates=False,
     df.loc[df['year'] == 2020, 'year_group'] = '2020'
 
     # add in descriptive title to column
-    for sensor_id in df['sensor_id'].unique():
-        df.loc[df['sensor_id'] == sensor_id, 'sensor_title'] = get_descriptive_title(sensor_id, df)
+#     for sensor_id in df['sensor_id'].unique():
+#         df.loc[df['sensor_id'] == sensor_id, 'sensor_title'] = get_descriptive_title(sensor_id, df)
 
     if do_limit_to_covid_dates:
         df = limit_to_dates(df, df['date'], min_date_str, max_date_str)

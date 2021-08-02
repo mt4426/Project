@@ -38,10 +38,11 @@ prog = re.compile(pat)
 files = os.listdir(AUDIO_DATAPATH)
 for f in files:
     if "h5" in f:
+        print(f)
         filepath = os.path.join(AUDIO_DATAPATH, f)
         h5 = h5py.File(filepath, 'r')
         df_ = pd.DataFrame({})
-        if f.split('_')[0] in sensors_wsp[:1]:
+        if f.split('_')[0] in sensors_wsp:
             for key in tqdm(h5.keys()):
                 _dict = {'sensor_id': prog.match(key).group(1),
                          'timestamp': float(prog.match(key).group(2)),

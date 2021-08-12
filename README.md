@@ -1,6 +1,7 @@
 # Sound Pollution and How it Affects Natural Life in Cities
 #### Maliha Tasnim^1, Magdalena Fuentes^2, Juan Bello^2
-###### 1. John Bowne High School 2. Music and Audio Research Laboratory, New York University
+###### 1. John Bowne High School
+###### 2. Music and Audio Research Laboratory, New York University
 
 
 #### Abstract
